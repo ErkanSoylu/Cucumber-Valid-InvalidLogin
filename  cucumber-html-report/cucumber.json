@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Valid login",
+        "description": "",
+        "id": "successfullogin;valid-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21657884600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am a user of amazon.com",
+            "match": {
+              "location": "AmazonPage.givenPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4010702000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I log in using valid credentials",
+            "match": {
+              "location": "AmazonPage.whenPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2967000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be logged in",
+            "match": {
+              "location": "AmazonPage.thenPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Invalid login",
+        "description": "",
+        "id": "successfullogin;ınvalid-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17801941600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am a user of amazon.com",
+            "match": {
+              "location": "AmazonPage.givenPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4462919200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I log in using invalid credentials",
+            "match": {
+              "location": "AmazonPage.whenFalsePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2009789200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should not be logged in",
+            "match": {
+              "location": "AmazonPage.thenInvalidPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "SuccessfulLogin",
+    "description": "",
+    "id": "successfullogin",
+    "keyword": "Feature",
+    "uri": "AmazonLogin.feature"
+  }
+]
